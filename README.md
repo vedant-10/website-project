@@ -1,2 +1,2 @@
 # website-project
-website template for car rgarage site
+website template for car garage site
