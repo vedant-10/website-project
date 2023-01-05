@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(images/mini\ cooper.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Merienda', cursive;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #3698ff;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.navbar p {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 1px;
+    padding-left: 1px;
+    color: #3a81a4;
+    font-family: 'Black Ops One', cursive;
+}
+
+
+/* Links inside the navbar */
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* The dropdown container */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Otomanopee One', sans-serif;
+    /* font: inherit; */
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    cursor: pointer;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(3, 95, 150);
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8cb4f2b3;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(245, 249, 245, 0);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+
+/* Mega Menu header, if needed */
+
+.dropdown-content .header {
+    background: rgb(31, 127, 230);
+    padding: 16px;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Create three equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    background-color: rgba(204, 204, 204, 0.199);
+    height: 250px;
+}
+
+
+/* Style links inside the column */
+
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: bolder;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+
+/* Add a background color on hover */
+
+.column a:hover {
+    background-color: rgba(22, 133, 197, 0.904);
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h3 {
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: larger;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.main h1 {
+    justify-self: center;
+    font-size: 10vh;
+    font-weight: bold;
+    font-stretch: expanded;
+    color: rgb(4, 5, 77);
+    font-family: 'Bree Serif', serif;
+}
+
+.top {
+    justify-self: center;
+    font-size: 4vh;
+    margin: 10px;
+    font-family: 'Laila', sans-serif;
+}
+
+.hop {
+    justify-self: center;
+    font-size: 3vh;
+    margin: 10px;
+}
+
+.search {
+    width: 350px;
+    height: auto;
+    padding: 4px;
+    margin: 15px;
+    font-size: larger;
+    text-align: center;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    background: #cbd4dd;
+}
+
+@media all and (max-width:400px) {
+    .search {
+        width: 200px;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .top {
+        font-size: larger;
+    }
+    .hop {
+        font-size: large;
+    }
+    .footer {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}
+
+.button {
+    font-family: 'Secular One', sans-serif;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin: 4px;
+    background-color: #124d8b;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-self: center;
+    border: none;
+}
+
+.button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(245, 249, 245, 0.493);
+    color: black;
+}
+
+.pop {
+    margin: 10px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.footer button {
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    background-color: #124d8b;
+    color: aliceblue;
+    font-size: large;
+    width: 200px;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Secular One', sans-serif;
+}
+
+.footer button:hover,
+.footer button:active,
+.footer button:focus {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(245, 249, 245, 0.493);
+    color: black;
+}

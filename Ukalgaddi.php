@@ -1,0 +1,95 @@
+<?php	
+// naming the connection 
+    $server = "localhost";
+    $username = "ukalgaddi";
+    $password = "";
+// setting the connection 
+    $conn = mysqli_connect($server,$username,$password);
+
+    if (!$conn) {
+        die("connection to database failed due to : ".mysqli_connect_error());    
+    } else {
+        echo "success conecting to the server";
+    }
+    
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ukalgaddi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+    <title>Ukal Gaddi</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <p>GetJabra</p>
+            <a href="Home.html">Home</a>
+            <a href="car.html">Spare For Cars</a>
+            <a href="mobile.html">Spare For Devices</a>
+            <div class="dropdown">
+                <button class="dropbtn">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="header">
+                        <h2>Official Websites for your brand</h2>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>Cars</h3>
+                            <a href="#">Hyundai</a>
+                            <a href="#">Tata</a>
+                            <a href="#">Suzuki</a>
+                            <a href="morecar.html">More</a>
+                        </div>
+                        <div class="column">
+                            <h3>Bikes</h3>
+                            <a href="#">Yamaha</a>
+                            <a href="#">Honda</a>
+                            <a href="#">TVS</a>
+                            <a href="morecar.html">More</a>
+                        </div>
+                        <div class="column">
+                            <h3>Devices</h3>
+                            <a href="#">Samsung</a>
+                            <a href="#">Apple</a>
+                            <a href="#">Panasonic</a>
+                            <a href="moredevices.html">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <h1>UKAL GADDI</h1>
+        <br>
+        <h4>"car broke, don't worry"</h4>
+        <br>
+        <p>We will help you to get to the nearest garage</p>
+        <button class="location" onclick="getLocation()">Get your location</button>
+        <div id="output">
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <form class="footerform">
+                <a href="contact.html"><input type="button" value="Contact us" class="base"></a>
+                <a href="terms.html"><input type="button" value="Terms and conditions" class="base"></a>
+            </form>
+            <form class="report">Report:<input type="text"></form>
+        </footer>
+    </div>
+</body>
+<!-- <script    src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+<script src="ukalgaddi.js"></script>
+
+</html>

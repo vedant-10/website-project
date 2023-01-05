@@ -1,0 +1,3 @@
+function loadurl(){
+    document.getElementById
+}
